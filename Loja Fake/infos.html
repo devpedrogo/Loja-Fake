@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Fake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Açaí da Terra <img src="img/acai-logo.png" alt="Açaí Logo"></h1>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="infos.html" class="a-drop">Informações <i class="fas fa-chevron-down"></i></a>
+                    <div class="conteudo-drop">
+                        <a href="#">Produtos</a>
+                        <a href="#">Preços</a>
+                        <a href="#">Adicionais</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" id="login">Login</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-bars" id="menu"></i>
+    </header>
+    <div class="menu-celular">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="dropdown">
+                <a href="infos.html" class="a-drop">Informações <i class="fas fa-chevron-down"></i></a>
+                <div class="conteudo-drop">
+                    <a href="#">Produtos</a>
+                    <a href="#">Preços</a>
+                    <a href="#">Adicionais</a>
+                    <a href="#">Ajuda</a>
+                </div>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#" id="login-celular">Login</a></li>
+        </ul>
+    </div>
+    <main style="height: 500px; width: 100%; align-items: center; justify-content: center;">
+        <h1 style="color: purple;">[AREA INFORMACAO]</h1>
+    </main>
+    <footer>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-youtube"></i>
+        <br>
+        <a href="https://github.com/devpedrogo" target="_blank"><p>&copy; devpedrogo</p></a>
+    </footer>
+
+    <div class="conteiner-modal">
+        <div class="form-modal">
+            <button class="fechar">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <form action="#" class="form">
+                <h1>Seja Bem-Vindo <br>de Volta</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <p><a href="#">Esqueceu a senha?</a></p>
+                <button>Entrar</button>
+                <p>Não possui conta? <a href="javascript:void(0);" id="link-criar-conta">Criar Conta</a></p>
+            </form>
+        </div>
+
+        <div class="form-modal form-criar-conta" style="display: none;">
+            <button class="fechar">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <form action="#">
+                <h1>Criar Conta</h1>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Confirmar Senha">
+                <button>Criar Conta</button>
+                <p>Já possui uma conta? <a href="javascript:void(0);" id="link-voltar-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
